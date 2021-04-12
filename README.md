@@ -32,7 +32,7 @@ eg. user A want to charge '100.0000 AOS' to account 'centralizede' proviede by �
 ### 2. user A transfer '100.0000 AOS' to account 'centralizede', must with memo '1234'
 ### 3. ‘Centralized exchange’ get_actions (use timer) to detech weather has new transfer（distinguish the transfer is from who by memo）,and deal this transfer,and then charge to the ‘Centralized exchange’ for this user A
 ```
-curl -X POST --url http://api.aos.plus:8888/v1/history/get_actions -d '{
+curl -X POST --url http://127.0.0.1:8888/v1/history/get_actions -d '{
   "pos": -1,
   "offset": -20,
   "account_name": "centralizede"
